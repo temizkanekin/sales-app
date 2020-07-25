@@ -1,15 +1,16 @@
-import Link from 'next/link'
-import Layout from '../components/Layout'
+import SideBar from '../components/SideBar'
+import { connect } from 'react-redux'
 
-const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </p>
-  </Layout>
-)
+const IndexPage = () => {
+  return (
+    <SideBar />
+  )
+}
 
-export default IndexPage
+const mapStateToProps = (state: any) => {
+  return {
+    ...state
+  }
+}
+
+export default connect(mapStateToProps, undefined)(IndexPage)

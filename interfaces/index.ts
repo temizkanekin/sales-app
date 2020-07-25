@@ -1,10 +1,40 @@
-// You can include shared interfaces/types in a separate file
-// and then use them in any component by importing them. For
-// example, to import the interface below do:
-//
-// import User from 'path/to/interfaces';
+type OrderDetail = {
+  orderId:number,
+  orderDate:string,
+  orderChannel:string,
+  orderShippingCompany:string,
+  orderPaymentType:string,
+  orderHistory: OrderHistory[]
+}
 
-export type User = {
-  id: number
-  name: string
+type Product = {
+  productName: string,
+  productCount: number
+}
+
+type DeliveryInformation = {
+  toBeDeliveredName:string,
+  toBeDeliveredPhoneNumber:string,
+  toBeDeliveredIdentityNumber:string,
+  toBeDeliveredAddress:string
+}
+
+type Status = {
+  type:string,
+  label:string
+}
+
+type OrderHistory = {
+  commentedPersonName:string,
+  orderHistoryEntry:string,
+  commentedDate:string
+}
+
+export type Order = {
+  orderDetails: OrderDetail,
+  customer:string,
+  products:Product,
+  status:Status,
+  price:number,
+  deliveryInformation: DeliveryInformation
 }
