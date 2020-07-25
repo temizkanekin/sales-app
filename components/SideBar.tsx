@@ -36,8 +36,10 @@ const SideBar: React.FC<any> = ({ salesState }) => {
                     }
                 </div>
                 <div className="sidebar-user-detail">
-                    <FontAwesomeIcon size="lg" icon={faUserCircle} />
-                    {salesState.userFullName}
+                    <div style={{margin:"auto"}}>
+                        <FontAwesomeIcon style={{paddingRight:".5rem"}} size="lg" icon={faUserCircle} />
+                        {salesState.userFullName}
+                    </div>
                 </div>
             </div>
             <style jsx>{`

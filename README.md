@@ -1,3 +1,23 @@
+## Available Scripts
+
+In the project directory, you can run:
+
+#### `yarn install`
+
+Install the node dependencies before run the app.
+
+#### `yarn dev`
+
+Runs next which starts Next.js in development mode
+
+#### `yarn build`
+
+Runs next build which builds the application for production usage
+
+#### `yarn start`
+
+Runs next start which starts a Next.js production server
+
 ## Description about app
 - This simple sales management application consist of two main views. These are:
     - Sales Market view to list orders in a table. You can double click to route order detail view with specified order id. Additionally, you can select order type from the top bar in order to filter the orders.
@@ -14,27 +34,9 @@
 - [styled components](https://styled-components.com/): styled-components utilises tagged template literals to style your components.
 - [font awesome icons](https://fontawesome.com/): Font Awesome, the web's most popular icon set and toolkit.
 
-## Feature TODO's
+## Feature TODO's
 - UI/UX Improvements
 - [Tailwind CSS](https://tailwindcss.com/) integration
 - Next.js implementation/concepts improvements
-
-## Notes
-
-This example shows how to integrate the TypeScript type system into Next.js. Since TypeScript is supported out of the box with Next.js, all we have to do is to install TypeScript.
-
-```
-npm install --save-dev typescript
-```
-
-To enable TypeScript's features, we install the type declarations for React and Node.
-
-```
-npm install --save-dev @types/react @types/react-dom @types/node
-```
-
-When we run `next dev` the next time, Next.js will start looking for any `.ts` or `.tsx` files in our project and builds it. It even automatically creates a `tsconfig.json` file for our project with the recommended settings.
-
-Next.js has built-in TypeScript declarations, so we'll get autocompletion for Next.js' modules straight away.
-
-A `type-check` script is also added to `package.json`, which runs TypeScript's `tsc` CLI in `noEmit` mode to run type-checking separately. You can then include this, for example, in your `test` scripts.
+- Responsive UI Support
+- Netlify deployment

@@ -79,7 +79,6 @@ const SalesMarket = ({ salesState }: any) => {
                                         <tr onDoubleClick={() => Router.push(`/salesmarket/${orderData.orderDetails.orderId}`)} className="salesmarket-table-body-row"
                                             key={orderData.orderDetails.orderId}>
                                             <td>
-                                                {/* <span>{orderData.orderDetails.orderChannel}</span> */}
                                                 <span style={{ color: 'darkblue' }}>{orderData.orderDetails.orderId}</span><br />
                                                 {orderData.orderDetails.orderDate}
                                             </td>
