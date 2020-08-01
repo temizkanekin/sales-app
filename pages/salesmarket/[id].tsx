@@ -84,7 +84,9 @@ const SalesDetail: React.FC<Props & any> = ({ addOrderHistoryComment, item, sale
                                         placeholder="Yorum ekleyin"
                                     >
                                     </input>
-                                    <Button onClick={handleAddHistoryComment(activeItem.orderDetails.orderId)}>Ekle</Button>
+                                    <div style={{width: "20%", justifyContent: "center", display: "flex"}}>
+                                        <Button onClick={handleAddHistoryComment(activeItem.orderDetails.orderId)}>Ekle</Button>
+                                    </div>
                                 </div>
                                 <div className="salesdetail-content-left-lower-order-history-entries">
                                     {
@@ -143,7 +145,7 @@ const SalesDetail: React.FC<Props & any> = ({ addOrderHistoryComment, item, sale
                 </div>
                 <style jsx>{`
                 .salesdetail-root {
-                    width:100%;
+                    width:85%;
                     height:100%;
                     display:flex;
                     flex-direction:column;

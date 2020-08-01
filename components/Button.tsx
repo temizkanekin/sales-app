@@ -11,6 +11,9 @@ export const Button:any = styled.button`
   border:none;
   font-size: 12px;
   padding:.5rem;  
+  display:flex;
+  align-items:center;
+  justify-content:center;
 
   &:disabled {
     opacity: .2;

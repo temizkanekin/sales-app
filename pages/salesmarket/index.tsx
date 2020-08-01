@@ -126,7 +126,7 @@ const SalesMarket = ({ salesState }: any) => {
                     width:20%;
                 }
                 .salesmarket-root {
-                    width:80%;
+                    width:85%;
                     height:100%;
                     display:flex;
                     flex-direction:column;

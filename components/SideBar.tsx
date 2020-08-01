@@ -45,11 +45,11 @@ const SideBar: React.FC<any> = ({ salesState }) => {
             <style jsx>{`
                 @media only screen and (max-width: 1024px){
                     .sidebar-root {
-                        width:40% !important;
+                        width:30% !important;
                     }
                 }
                 .sidebar-root {
-                    width:20%;
+                    width:15%;
                     height:100%;
                 }
                 .sidebar-items {
