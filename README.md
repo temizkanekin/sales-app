@@ -1,3 +1,6 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8d1b9820-7710-4abf-97d9-7405bcd4d129/deploy-status)](https://app.netlify.com/sites/festive-lumiere-02399a/deploys)
+
+[![Build Status](https://travis-ci.com/temizkanekin/sales-app.svg?branch=master)](https://travis-ci.com/temizkanekin/sales-app)
 ## Available Scripts
 
 In the project directory, you can run:
