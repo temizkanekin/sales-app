@@ -90,7 +90,7 @@ const SalesMarket = ({ salesState }: any) => {
                                                     {orderData.products.productCount} Ürün</span>
                                             </td>
                                             <td>
-                                                <Button large buttonType={orderData.status.type} onClick={() => console.log(1)}>{orderData.status.label}</Button>
+                                                <Button style={{margin:'auto'}} large buttonType={orderData.status.type} onClick={() => console.log(1)}>{orderData.status.label}</Button>
                                             </td>
                                             <td>
                                                 {orderData.price}{salesState.currencySymbol}
